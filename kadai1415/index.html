@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>岐阜協立大学 経営情報学科</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        #hero .btn {
+            display: inline-block;
+            background: #0073e6;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        address {
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
-    q
+    <header>
+        <div class="container">
+            <h1>岐阜協立大学 経営情報学科</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">学科について</a></li>
+                    <li><a href="#curriculum">カリキュラム</a></li>
+                    <li><a href="#admission">入試情報</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>未来を創るリーダーへ</h2>
+            <p>経営情報学科で学び、ビジネスと情報技術の融合を探求しましょう。</p>
+            <a href="#about" class="btn">もっと見る</a>
+        </div>
+    </section>
+    <section id="about" class="container">
+        <h2>学科について</h2>
+        <p>経営情報学科は、ビジネスと情報技術の融合を学び、現代の企業が直面する課題を解決する力を養います。</p>
+    </section>
+    <section id="curriculum" class="container">
+        <h2>カリキュラム</h2>
+        <ul>
+            <li>基礎情報処理</li>
+            <li>経営戦略</li>
+            <li>プログラミング基礎</li>
+            <li>データベース管理</li>
+            <li>マーケティング論</li>
+        </ul>
+    </section>
+    <section id="admission" class="container">
+        <h2>入試情報</h2>
+        <p>経営情報学科への入学を希望する方は、以下のリンクから詳細をご覧ください。</p>
+        <a href="https://www.gku.ac.jp/academics/management/information/new/index.html" class="btn">入試情報</a>
+    </section>
+    <footer id="contact" class="container">
+        <h2>お問い合わせ</h2>
+        <p>詳細な情報や質問がある場合は、お気軽にお問い合わせください。</p>
+        <address>
+            岐阜協立大学<br>
+            〒501-1234 岐阜県岐阜市○○町1234<br>
+            電話: 012-345-6789<br>
+            メール: info@gku.ac.jp
+        </address>
+    </footer>
 </body>
 </html>

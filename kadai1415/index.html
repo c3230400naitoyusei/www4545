@@ -1,4 +1,5 @@
 <!-- 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -94,7 +95,27 @@
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
+
+        .alert-button {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .alert-button:hover {
+            background-color: #45a049;
+        }
     </style>
+    <script>
+        function showAlert(section) {
+            alert(section + ' のボタンがクリックされました');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -123,26 +144,31 @@
                 <li>情報：「もの」と「こと」の創造や分析をする力</li>
             </ul>
             <img src="images/A_photo_of_students_engaged_in_a_business_manageme.jpg" alt="経営メデ学科の学び">
+            <button class="alert-button" onclick="showAlert('経営メディア学科の学び')">クリック</button>
         </section>
         <section id="features">
             <h3>学びの特色</h3>
             <p>「新しい価値を創造する力」が身につく 新学科ならではのカリキュラム構成</p>
             <img src="images/A_photo_of_a_professor_explaining_innovative_curri.jpg" alt="学びの特色">
+            <button class="alert-button" onclick="showAlert('学びの特色')">クリック</button>
         </section>
         <section id="marketing">
             <h3>経営・マーケティング分野</h3>
             <p>経営学を体系的に学び、新しい製品・サービスの提案と効果的な売り出し方について考える力や、企業やさまざまな組織の運営力を身につけるための科目が、用意されています。</p>
             <img src="images/A_photo_of_students_brainstorming_in_a_marketing_c.jpg" alt="経営・マーケティング分野">
+            <button class="alert-button" onclick="showAlert('経営・マーケティング分野')">クリック</button>
         </section>
         <section id="finance">
             <h3>会計・ファイナンス分野</h3>
             <p>会計情報の意味を適切に理解して、企業の財政状態や経営状況から将来性を推測する力を身につけるための科目が、用意されています。</p>
             <img src="images/A_photo_of_students_analyzing_financial_data_on_co.jpg" alt="会計・ファイナンス分野">
+            <button class="alert-button" onclick="showAlert('会計・ファイナンス分野')">クリック</button>
         </section>
         <section id="information">
             <h3>情報分野</h3>
             <p>ビッグデータを利活用する現代ビジネスで、必要不可欠なAI 、IoT、ロボット、クラウド等のデジタルテクノロジーを活用する力を身につけるための科目が、用意されています。</p>
             <img src="images/A_photo_of_students_working_with_AI_and_robotics_t.jpg" alt="情報分野">
+            <button class="alert-button" onclick="showAlert('情報分野')">クリック</button>
         </section>
         <section id="seminar">
             <h3>ゼミナール</h3>
@@ -151,21 +177,25 @@
             <p>情報技術で社会が求めるものづくりに挑戦を</p>
             <p>経営学の観点から、情報技術を活用した新たな製品やサービスを考え、その開発に挑戦しています。</p>
             <img src="images/A_photo_of_students_discussing_a_project_in_a_semi.jpg" alt="ゼミナール">
+            <button class="alert-button" onclick="showAlert('ゼミナール')">クリック</button>
         </section>
         <section id="project1">
             <h3>プロジェクト1: ロボット技能競技大会</h3>
             <p>Junior Skills『アイチータ杯』をサポートし、ロボット教材を開発</p>
             <img src="images/A_photo_of_students_building_a_robot_in_a_project_.jpg" alt="ロボット技能競技大会">
+            <button class="alert-button" onclick="showAlert('ロボット技能競技大会')">クリック</button>
         </section>
         <section id="project2">
             <h3>プロジェクト2: ロボットプログラミング講座</h3>
             <p>創造力を育てるロボットプログラミング講座</p>
             <img src="images/A_photo_of_students_building_a_robot_in_a_project.jpg" alt="ロボットプログラミング講座">
+            <button class="alert-button" onclick="showAlert('ロボットプログラミング講座')">クリック</button>
         </section>
         <section id="project3">
             <h3>プロジェクト3: マラソン大会受付システムの開発</h3>
             <p>コロナ禍におけるマラソン大会の受付システムの開発</p>
             <img src="images/A_photo_of_students_building_a_robot_in_a_projec.jpg" alt="マラソン大会受付システムの開発">
+            <button class="alert-button" onclick="showAlert('マラソン大会受付システムの開発')">クリック</button>
         </section>
     </main>
     <footer>
@@ -173,7 +203,6 @@
     </footer>
 </body>
 </html> -->
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -208,12 +237,18 @@
             padding: 0.5rem;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             padding: 0.5rem 1rem;
+            display: block;
+            text-align: center;
         }
 
         nav a:hover {
